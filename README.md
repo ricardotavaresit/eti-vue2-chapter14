@@ -2,7 +2,7 @@
 
 <h2>Chapter 14 - Vuex</h2>
 
-- Class 02: Install vuex in Vue JS
+- Class 02: Install Vuex in Vue JS
 
 
 ## Technologies used
