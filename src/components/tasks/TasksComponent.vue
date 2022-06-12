@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
+    <task-add-component />
     <ul>
       <li v-bind:key="index" v-for="(task, index) in getTasks">
         {{ task.name }}
@@ -11,6 +12,7 @@
 
 
 <script>
+import TaskAddComponent from "./TaskAddComponent";
 export default {
   data() {
     return {
@@ -22,5 +24,8 @@ export default {
       return this.$store.state.tasks;
     },
   },
+  components:{
+    TaskAddComponent
+  }
 };
 </script>
