@@ -5,7 +5,7 @@
     <ul>
       <li
         v-bind:key="index"
-        v-for="(task, index) in getTasks"
+        v-for="(task, index) in getSortedTasks"
         v-bind:class="{ completed: task.completed }"
       >
         {{ task.name }} - {{ task.completed ? "Completed" : "Uncompleted" }}
@@ -32,6 +32,10 @@ export default {
   computed: {
     getTasks() {
       return this.$store.state.tasks;
+    },
+
+    getSortedTasks() {
+      return this.$store.getters.sortedTasks;
     },
   },
   components: {
