@@ -6,7 +6,7 @@
       <li
         v-bind:key="index"
         v-for="(task, index) in getTasks"
-        :class="{ completed: task.completed }"
+        v-bind:class="{ completed: task.completed }"
       >
         {{ task.name }} - {{ task.completed ? "Completed" : "Uncompleted" }}
         <a href="#" v-on:click.prevent="completedTask(task)">Toogle</a>
