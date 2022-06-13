@@ -6,6 +6,7 @@
 - Class 03: Create routes in Vue JS
 - Class 04: Vuex state in Vue JS
 - Class 05: Vuex mutation in Vue JS
+- Class 06: Vuex mutation commit in Vue JS
 
 
 ## Technologies used
