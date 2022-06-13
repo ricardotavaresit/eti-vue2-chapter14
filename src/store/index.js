@@ -39,7 +39,15 @@ export default new Vuex.Store({
 
         return 0;
       })
-
+    },
+    tasksNotCompleted(state) {
+      return state.tasks.filter(item => item.completed == false)
+    },
+    tasksCompleted(state) {
+      return state.tasks.filter(item => item.completed == true)
+    },
+    totalTasks(state) {
+      return state.tasks;
     }
   }
 });
