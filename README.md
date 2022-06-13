@@ -4,6 +4,7 @@
 
 - Class 02: Install Vuex in Vue JS
 - Class 03: Create routes in Vue JS
+- Class 04: Vuex state in Vue JS
 
 
 ## Technologies used
