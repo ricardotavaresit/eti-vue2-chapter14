@@ -3,6 +3,7 @@
 <h2>Chapter 14 - Vuex</h2>
 
 - Class 02: Install Vuex in Vue JS
+- Class 03: Create routes in Vue JS
 
 
 ## Technologies used
