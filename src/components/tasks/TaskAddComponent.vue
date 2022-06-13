@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
     <form v-on:submit.prevent="onSubmit">
       <input type="text" placeholder="Add new task" v-model="task.name" />
       <button type="submit">Add</button>
