@@ -8,6 +8,7 @@
 - Class 05: Vuex mutation in Vue JS
 - Class 06: Vuex mutation commit in Vue JS
 - Class 07: Vuex actions in Vue JS
+- Class 08: Vuex getters in Vue JS
 
 
 ## Technologies used
