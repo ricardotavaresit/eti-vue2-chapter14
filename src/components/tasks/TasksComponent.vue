@@ -3,8 +3,13 @@
     <h1>{{ title }}</h1>
     <task-add-component />
     <ul>
-      <li v-bind:key="index" v-for="(task, index) in getTasks">
-        {{ task.name }}
+      <li
+        v-bind:key="index"
+        v-for="(task, index) in getTasks"
+        :class="{ completed: task.completed }"
+      >
+        {{ task.name }} - {{ task.completed ? "Completed" : "Uncompleted" }}
+        <a href="#" v-on:click.prevent="completedTask(task)">Toogle</a>
       </li>
     </ul>
   </div>
@@ -19,13 +24,24 @@ export default {
       title: "Hi Task",
     };
   },
+  methods: {
+    completedTask(task) {
+      this.$store.commit("TOOGLE_TASK", task);
+    },
+  },
   computed: {
     getTasks() {
       return this.$store.state.tasks;
     },
   },
-  components:{
-    TaskAddComponent
-  }
+  components: {
+    TaskAddComponent,
+  },
 };
 </script>
+
+<style scoped>
+.completed {
+  background: green;
+}
+</style>
