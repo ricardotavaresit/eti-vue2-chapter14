@@ -10,6 +10,7 @@
 - Class 07: Vuex actions in Vue JS
 - Class 08: Vuex getters in Vue JS
 - Class 09: Vuex getters with filters in Vue JS
+- Class 10: Refactor objects Vuex in Vue JS
 
 
 ## Technologies used
